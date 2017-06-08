@@ -21,6 +21,7 @@ Le code source PHP est disponible dans le dossier précédement téléchargé.
 
 4) bank-level.php ( couplage CSRF )
 	On considère que la banque fait ses transferts grâce aux requêtes GET.
+	
 	La requête est composé de 2 paramètres : amount( montant du transfert ) & to ( id de l'user, normalement le votre)
 
 	- Utiliser alert('Vous êtes bien connecté à votre compte')
@@ -29,7 +30,9 @@ Le code source PHP est disponible dans le dossier précédement téléchargé.
 
 5) Retourner sur easy-level.php
 	Vous allez essayer d'enregistrer un fichier sur le pc d'un utilisateur en utilisant le script FilesSaver.js
+	
 	Doc : https://github.com/eligrey/FileSaver.js/
+	
 	CDN : https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.min.js ( peut être utile 😉 )
 
 If you have some free time, try the game about XSS : https://xss-game.appspot.com/
