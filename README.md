@@ -10,16 +10,16 @@ Rappel : une faille xss consiste à utiliser par exemple du javascript dans un c
 Le code source PHP est disponible dans le dossier précédement téléchargé.
 	-> impossible-level.php empêche tout type de xss.
 
-1) easy-level.php 
+### Question 1 - **easy-level.php**
 	Aucune protection sur la page, vous allez pouvoir faire ce que vous voulez
 
-2) easy-level-2.php
-	Une seule petite protection sur la page
+### Question 2 - **easy-level-2.php**
+	Une protection a rajouté, a vous de la trouver 
 
-3) medium-level.php
-	Une protection est faite côté serveur.
+### Question 3 - **medium-level.php**
+	Une protection a été rajouté côté serveur. 
 
-4) bank-level.php ( couplage CSRF )
+### Question 4 - **bank-level.php** ( couplage CSRF )
 	On considère que la banque effectue ses transferts grâce aux requêtes GET.
 	
 	La requête est composée de 2 paramètres : amount( montant du transfert ) & to ( id de l'user, normalement le votre)
