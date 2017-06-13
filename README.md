@@ -11,24 +11,28 @@ Le code source PHP est disponible dans le dossier précédement téléchargé.
 	-> impossible-level.php empêche tout type de xss.
 
 ### Question 1 - **easy-level.php**
-	Aucune protection sur la page, vous allez pouvoir faire ce que vous voulez
+	Aucune protection sur la page, vous allez pouvoir faire ce que vous voulez ( par exemple afficher une alerte )
 
 ### Question 2 - **easy-level-2.php**
-	Une protection a rajouté, a vous de la trouver 
+	Une protection a été rajoutée, à vous de la trouver.
 
 ### Question 3 - **medium-level.php**
 	Une protection a été rajouté côté serveur. 
 
 ### Question 4 - **bank-level.php** ( couplage CSRF )
-	On considère que la banque effectue ses transferts grâce aux requêtes GET.
+
+	Objectif : Essayez de vous faire une virement à vous même.
 	
-	La requête est composée de 2 paramètres : amount( montant du transfert ) & to ( id de l'user, normalement le votre)
+	On considère que la banque effectue ses transferts grâce aux requêtes GET.	
+	La requête est composée de 2 paramètres : amount( montant du transfert ) & to ( id de l'user, normalement le votre).
+	
+	Conseils :
+		- Utiliser alert('Vous êtes bien connecté à votre compte')
+		- Utiliser window.location.href ( pour rediriger l'utilisateur : CSRF)
+		- Aide : le '&' peut aussi s'écrire ...
 
-	- Utiliser alert('Vous êtes bien connecté à votre compte')
-	- Utiliser window.location.href ( pour rediriger l'utilisateur : CSRF)
-	- Aide : le '&' peut aussi s'écrire ...
+### Question 5 Retourner sur easy-level.php
 
-5) Retourner sur easy-level.php
 	Vous allez essayer d'enregistrer un fichier sur le pc d'un utilisateur en utilisant le script FilesSaver.js
 	
 	Doc : https://github.com/eligrey/FileSaver.js/
