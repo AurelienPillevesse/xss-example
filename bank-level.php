@@ -29,6 +29,7 @@
 			<a class="mdl-navigation__link" href="/easy-level-2.php">Easy level 2 </a>
 			<a class="mdl-navigation__link" href="/medium-level.php">Medium Level</a>
 			<a class="mdl-navigation__link" href="/bank-level.php">Bank Level</a>
+			<a class="mdl-navigation__link" href="/impossible-level.php">Impossible Level</a>
 		</nav>
 	</div>
 	<main class="mdl-layout__content">
@@ -36,7 +37,24 @@
 			<div class="page-content">
 				<h1> Bienvenue sur votre espace client !</h1>
 			</div>
-		</section
+		</section>
+			<section class="mdl-layout__tab-panel" id="fixed-tab-2">
+				<div class="page-content">
+					<pre>
+					$amount ='';<br>
+					$to ='';
+					if(isset($_GET['amount']))<br>
+						$amount = $_GET['amount'];<br>
+					<br>
+					if(isset($_GET['to']))<br>
+						$to = $_GET['to'];<br>
+					<br>
+					if(isset($_GET['amount']) && isset($_GET['to']) ){<br>
+						echo 'Vous avez réussi à transferer : '.$amount.' à '.$to;<br>
+					}<br>
+				</pre>
+				</div>
+			</section>
 	</main>
 
 	</body>
@@ -56,3 +74,4 @@ if(isset($_GET['to']))
 if(isset($_GET['amount']) && isset($_GET['to']) ){
 	echo 'Vous avez réussi à transferer : '.$amount.' à '.$to;
 }
+?>

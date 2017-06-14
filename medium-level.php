@@ -29,6 +29,7 @@
 			<a class="mdl-navigation__link" href="/easy-level-2.php">Easy level 2 </a>
 			<a class="mdl-navigation__link" href="/medium-level.php">Medium Level</a>
 			<a class="mdl-navigation__link" href="/bank-level.php">Bank Level</a>
+			<a class="mdl-navigation__link" href="/impossible-level.php">Impossible Level</a>
 		</nav>
 	</div>
 	<main class="mdl-layout__content">
@@ -74,8 +75,8 @@
 		</section>
 		<section class="mdl-layout__tab-panel" id="fixed-tab-2">
 
-			<div class="page-content"  style="margin-left:40%;">
-				<code type="php">
+			<div class="page-content"  style="margin-left:10%;">
+				<pre type="php">
 					$nom ='';<br>
 					$prenom ='';
 					if(isset($_POST['nom']))<br>
@@ -90,7 +91,7 @@
 						$result =preg_replace('/&lsaquo;script>/', '', $result);<br>
 						echo 'Hello :'.$result;<br>
 					<br>
-				</code>
+				</pre>
 			</div>
 		</section>
 	</main>
